@@ -5,6 +5,7 @@ from dotenv import load_dotenv
 from deepeval import evaluate
 from deepeval.test_case import LLMTestCase
 from deepeval.metrics import ContextualRecallMetric, ContextualPrecisionMetric
+from deepeval.evaluate.configs import AsyncConfig
 
 from src.retriever import build_retriever
 
@@ -60,4 +61,5 @@ evaluate(
         "judge_model": JUDGE_MODEL,
         "golden_set": GOLDEN_PATH,
     },
+    async_config = AsyncConfig(run_async=True, throttle_value=2, max_concurrent=2),
 )
