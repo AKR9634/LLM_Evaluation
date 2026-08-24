@@ -61,5 +61,5 @@ evaluate(
         "judge_model": JUDGE_MODEL,
         "golden_set": GOLDEN_PATH,
     },
-    async_config = AsyncConfig(run_async=True, throttle_value=2, max_concurrent=3),
+    async_config = AsyncConfig(run_async=True, throttle_value=2, max_concurrent=2),
 )

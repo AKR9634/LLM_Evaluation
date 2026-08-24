@@ -65,4 +65,4 @@ AnswerRelevancyMetric(
 
 
 # 4. EVALUATE — runs the metric on every case, prints a report
-evaluate(test_cases=test_cases, metrics=metrics, async_config = AsyncConfig(run_async=True, throttle_value=2, max_concurrent=2))
+evaluate(test_cases=test_cases, metrics=metrics, async_config = AsyncConfig(run_async=True, throttle_value=2, max_concurrent=3))
